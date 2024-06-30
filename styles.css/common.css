@@ -1,0 +1,157 @@
+:root {
+  --logo-font-family: "Raleway", sans-serif;
+  --font-family: "Roboto", sans-serif;
+  --title-color: #2e2f42;
+  --text-color: #434455;
+  --hero-background-color: #2e2f42;
+  --page-background-color: #ffffff;
+  --hero-title-color: #ffffff;
+  --dark-version-text-color: #f4f4fd;
+  --team-background-color: #f4f4fd;
+  --logo-color: #4d5ae5;
+  --button-background-color: #4d5ae5;
+}
+
+/* ========== COMMON ========== */
+.logo {
+  color: var(--title-color);
+  font-family: var(--logo-font-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+/* ========== /COMMON ========== */
+
+/* ========== BODY ========== */
+body {
+  font-family: var(--font-family);
+  background-color: var(--page-background-color);
+}
+/* ========== /BODY ========== */
+
+/* ========== HEADER ========== */
+.logo-part {
+  color: var(--logo-color);
+}
+.header-menu a {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.header-mail {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-style: normal;
+}
+.header-tel {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-style: normal;
+}
+/* ========== /HEADER ========== */
+
+/* ========== HERO ========== */
+.hero {
+  background-color: var(--hero-background-color);
+}
+.hero-title {
+  color: var(--hero-title-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.hero-button {
+  color: var(--hero-title-color);
+  background-color: var(--button-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+/* ========== /HERO ========== */
+
+/* ========== ADVANTAGES ========== */
+.advantages-item h3 {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.advantages-item p {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* ========== /ADVANTAGES ========== */
+
+/* ========== TEAM ========== */
+.team {
+  background-color: var(--team-background-color);
+}
+.team-item {
+  background-color: var(--page-background-color);
+}
+.team-participant {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.team-participant-funktion {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* ========== /TEAM ========== */
+
+/* ========== FOOTER ========== */
+.footer {
+  background-color: var(--hero-background-color);
+}
+.footer-text {
+  color: var(--dark-version-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.footer-logo {
+  color: var(--dark-version-text-color);
+  font-family: var(--logo-font-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+/* ========== /FOOTER ========== */
