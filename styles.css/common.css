@@ -13,6 +13,15 @@
 }
 
 /* ========== COMMON ========== */
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 2px solid tomato;
+}
+.image {
+  display: block;
+}
 .logo {
   color: var(--title-color);
   font-family: var(--logo-font-family);
@@ -23,6 +32,8 @@
 }
 .list {
   list-style: none;
+  margin: 0 0;
+  padding: 0 0;
 }
 .link {
   text-decoration: none;
@@ -34,6 +45,7 @@
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  margin: 0 0;
 }
 /* ========== /COMMON ========== */
 
@@ -84,37 +96,63 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 48px;
 }
 .hero-button {
+  display: inline-block;
+  padding: 16px 32px;
+  min-width: 169;
+  border-radius: 4px;
   color: var(--hero-title-color);
   background-color: var(--button-background-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
 /* ========== /HERO ========== */
 
 /* ========== ADVANTAGES ========== */
-.advantages-item h3 {
+.advantages-list .advantages-title {
   color: var(--title-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
-.advantages-item p {
+.advantages-list .advantages-text {
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.advantages-title,
+.team-participant {
+  margin-top: 0;
+  margin-bottom: 8;
+}
+.advantages-text,
+.team-participant-funktion {
+  margin: 0 0;
+}
+
 /* ========== /ADVANTAGES ========== */
+
+/* ========== ABOUT ========== */
+.about-title {
+  margin-bottom: 72px;
+}
+/* ========== /ABOUT ========== */
 
 /* ========== TEAM ========== */
 .team {
   background-color: var(--team-background-color);
+}
+.team-title {
+  margin-bottom: 72px;
 }
 .team-item {
   background-color: var(--page-background-color);
@@ -125,6 +163,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .team-participant-funktion {
   color: var(--text-color);
@@ -132,6 +171,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.team-image {
+  margin-bottom: 32px;
 }
 /* ========== /TEAM ========== */
 
@@ -145,6 +187,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin: 0 0;
 }
 .footer-logo {
   color: var(--dark-version-text-color);
@@ -153,5 +196,7 @@ body {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 /* ========== /FOOTER ========== */

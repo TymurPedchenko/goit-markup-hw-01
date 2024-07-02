@@ -11,8 +11,19 @@
   --logo-color: #4d5ae5;
   --button-background-color: #4d5ae5;
   --button-background-activ-color: #404bbf;
+  --button-border-color: #e7e9fc;
 }
 /* ========== COMMON ========== */
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 2px solid tomato;
+}
+.image {
+  display: block;
+  margin-bottom: 32px;
+}
 .logo {
   color: var(--title-color);
   font-family: var(--logo-font-family);
@@ -23,6 +34,8 @@
 }
 .list {
   list-style: none;
+  margin: 0 0;
+  padding: 0 0;
 }
 .link {
   text-decoration: none;
@@ -75,17 +88,26 @@ body {
 
 /* ========== PORTFOLIO ========== */
 .button {
+  display: inline-block;
+  padding: 12px 24px;
+  min-width: 69px;
   color: var(--button-background-color);
   background-color: var(--dark-version-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border-radius: 4px;
+  border: 1px solid var(--button-border-color);
+  cursor: pointer;
 }
 .button:hover,
 .button:focus {
   color: var(--page-background-color);
   background-color: var(--button-background-activ-color);
+  border-color: #404bbf;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .subtitle {
@@ -94,6 +116,8 @@ body {
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 .portfolio-item-type {
   color: var(--text-color);
@@ -101,6 +125,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin: 0 0;
 }
 .portfolio-items li {
   background-color: var(--page-background-color);
@@ -117,6 +142,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin: 0 0;
 }
 .footer-logo {
   color: var(--dark-version-text-color);
@@ -125,5 +151,7 @@ body {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 /* ========== /FOOTER ========== */
