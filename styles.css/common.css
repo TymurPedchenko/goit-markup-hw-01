@@ -13,11 +13,13 @@
 }
 
 /* ========== COMMON ========== */
+/* * {
+  outline: 2px solid tomato;
+} */
 .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 2px solid tomato;
 }
 .image {
   display: block;
@@ -36,6 +38,7 @@
   padding: 0 0;
 }
 .link {
+  display: block;
   text-decoration: none;
 }
 .title {
@@ -57,17 +60,48 @@ body {
 /* ========== /BODY ========== */
 
 /* ========== HEADER ========== */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 76px;
+}
 .logo-part {
   color: var(--logo-color);
 }
-.header-menu a {
+.header-menu {
+  display: flex;
+}
+.header-link {
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.header-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+.header-address {
+  margin-left: auto;
+}
+.header-list {
+  display: flex;
+}
 .header-mail {
+  margin-right: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
@@ -76,6 +110,9 @@ body {
   font-style: normal;
 }
 .header-tel {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
@@ -89,40 +126,59 @@ body {
 .hero {
   background-color: var(--hero-background-color);
 }
+.hero-container {
+  padding: 188px 331px;
+}
 .hero-title {
+  margin: auto auto;
+  min-width: 496px;
+
   color: var(--hero-title-color);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  text-align: center;
   margin-bottom: 48px;
 }
 .hero-button {
-  display: inline-block;
+  display: block;
+  margin: auto auto;
   padding: 16px 32px;
   min-width: 169;
-  border-radius: 4px;
+
   color: var(--hero-title-color);
   background-color: var(--button-background-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
+  border-radius: 4px;
   border: 1px solid transparent;
   cursor: pointer;
 }
 /* ========== /HERO ========== */
 
 /* ========== ADVANTAGES ========== */
-.advantages-list .advantages-title {
+.advantages-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+.advantages-item {
+  width: calc(100% / 4);
+}
+.advantages-title {
   color: var(--title-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
-.advantages-list .advantages-text {
+.advantages-text {
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
@@ -142,28 +198,45 @@ body {
 /* ========== /ADVANTAGES ========== */
 
 /* ========== ABOUT ========== */
+.about-container {
+  padding-bottom: 120px;
+}
 .about-title {
   margin-bottom: 72px;
+}
+.about-list {
+  display: flex;
+  gap: 24px;
 }
 /* ========== /ABOUT ========== */
 
 /* ========== TEAM ========== */
+.team-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .team {
   background-color: var(--team-background-color);
 }
 .team-title {
   margin-bottom: 72px;
 }
+.team-list {
+  display: flex;
+  gap: 24px;
+}
 .team-item {
   background-color: var(--page-background-color);
 }
 .team-participant {
+  margin-bottom: 8px;
+  padding-top: 32px;
+
   color: var(--title-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
 }
 .team-participant-funktion {
   color: var(--text-color);
@@ -172,31 +245,38 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.team-image {
-  margin-bottom: 32px;
-}
 /* ========== /TEAM ========== */
 
 /* ========== FOOTER ========== */
 .footer {
   background-color: var(--hero-background-color);
 }
+.footer-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-content {
+  width: 264px;
+  margin-right: auto;
+}
 .footer-text {
+  margin: 0 0;
+
   color: var(--dark-version-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin: 0 0;
 }
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+
   color: var(--dark-version-text-color);
   font-family: var(--logo-font-family);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  display: inline-block;
-  margin-bottom: 16px;
 }
 /* ========== /FOOTER ========== */
